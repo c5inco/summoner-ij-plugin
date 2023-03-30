@@ -21,5 +21,9 @@ A plugin demonstrates Jetpack compose capabilities on IntelliJ Platform as a pop
                 text="Show Compose Demo...">
             <add-to-group group-id="ToolsMenu" anchor="last"/>
         </action>
+        <action id="des.c5inco.toolbox.SummonToolAction" class="des.c5inco.toolbox.SummonToolAction"
+                text="Summon Tool Window...">
+            <add-to-group group-id="ToolsMenu" anchor="last"/>
+        </action>
     </actions>
 </idea-plugin>
