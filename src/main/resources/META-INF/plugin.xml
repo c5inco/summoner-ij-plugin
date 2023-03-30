@@ -1,0 +1,25 @@
+<idea-plugin>
+    <id>des.c5inco.ToolboxPlugin</id>
+    <name>Jetpack Compose Toolbox Popup</name>
+    <vendor email="csinco.design@gmail.com" url="http://csinco.com">Chris Sinco</vendor>
+
+    <description><![CDATA[
+A plugin demonstrates Jetpack compose capabilities on IntelliJ Platform as a popup
+    ]]></description>
+
+    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <action id="des.c5inco.toolbox.ComposeDemoAction" class="des.c5inco.toolbox.ComposeDemoAction"
+                text="Show Compose Demo...">
+            <add-to-group group-id="ToolsMenu" anchor="last"/>
+        </action>
+    </actions>
+</idea-plugin>
